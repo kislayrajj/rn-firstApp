@@ -7,7 +7,19 @@ export default function FlatCards() {
       <Text style={styles.headingText}>FlatCards</Text>
       <View  style={styles.container}>
         <View style={[styles.card, styles.cardOne]}>
-        <Text>Red</Text>
+        <Text style= {styles.text}>Red</Text>
+        </View>
+        <View style={[styles.card, styles.cardTwo]}>
+        <Text style= {styles.text}>Blue</Text>
+        </View>
+        <View style={[styles.card, styles.cardThree]}>
+        <Text style= {styles.text}>Green</Text>
+        </View>
+        <View style={[styles.card, styles.cardFour]}>
+        <Text style= {styles.text}>Grey</Text>
+        </View>
+        <View style={[styles.card, styles.cardFive]}>
+        <Text style= {styles.text}>Yellow</Text>
         </View>
       </View>
     </View>
@@ -16,7 +28,8 @@ export default function FlatCards() {
 
 const styles = StyleSheet.create({
     container:{
-        // flex: 1,
+        flex: 1,
+        flexDirection: 'row',
         // justifyContent:"center",
         // alignItems:"center",
     },
@@ -54,10 +67,23 @@ const styles = StyleSheet.create({
     
     cardOne:{
         backgroundColor: '#ff0000',
-        color : "#F8EDED",
-        fontSize:20,
-
-
     },
+    cardTwo:{
+      backgroundColor: '#7C00FE',
+  },
+  cardThree:{
+    backgroundColor: '#399918',
+},
+cardFour:{
+  backgroundColor: '#987D9A',
+},
+cardFive:{
+  backgroundColor: '#FFB200',
+},
+
+    text:{
+      color: "white",
+      fontSize: 18,
+    }
 
 })
